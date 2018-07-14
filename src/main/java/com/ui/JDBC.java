@@ -23,4 +23,7 @@ public class JDBC {
             e.printStackTrace();
         }
     }
+    public static void main(String[] args){
+        new JDBC();
+    }
 }
