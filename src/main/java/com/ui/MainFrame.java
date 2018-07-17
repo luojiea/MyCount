@@ -1,9 +1,22 @@
-package main.java.com.ui;
+package com.ui;
 
-import javax.swing.*;
-import java.awt.*;
+import java.awt.BorderLayout;
+import java.awt.CardLayout;
+import java.awt.Color;
+import java.awt.GridLayout;
+import java.awt.TextField;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+
+import javax.swing.BorderFactory;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import javax.swing.JTextArea;
+import javax.swing.SwingConstants;
+import javax.swing.WindowConstants;
 
 /**
  * @author
@@ -128,7 +141,8 @@ public class MainFrame extends JFrame {
         panelCenterAdd.add(labelRemark);
         panelCenterAdd.add(areaRemark);
         //2.添加信息表格面板组件
-        panelCenterTable.add(labelCenterMassage);
+        panelCenterTable.setLayout(new BorderLayout());
+        panelCenterTable.add(JTableTest.getJScrollPane());
 
         //====添加底部的面板内所有组件，并设置布局方式===
         panelSouth.setLayout(new CardLayout());
