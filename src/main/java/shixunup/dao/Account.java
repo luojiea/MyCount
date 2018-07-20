@@ -12,9 +12,9 @@ public class Account {
         return createDate;
     }
 
-//    public void setCreate_date(Date create_date) {
-//        this.create_date = create_date;
-//    }
+    public void setCreateDate(Timestamp createDate) {
+        this.createDate = createDate;
+    }
 
     public int getId() {
         return id;

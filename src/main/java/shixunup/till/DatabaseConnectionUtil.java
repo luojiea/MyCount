@@ -7,9 +7,13 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import shixunup.dao.Database;
 
+/**
+ * @author 23149330203
+ */
 public class DatabaseConnectionUtil {
     /**
-     *
+     * 实现对数据库建立连接
+     * @param database 一个数据库对象
      * @return 返回一个数据库连接对象
      */
     public static Connection getConnection(Database database) {
@@ -31,7 +35,7 @@ public class DatabaseConnectionUtil {
     }
 
     /**
-     *
+     * 实现关闭的数据库连接对像
      * @param statement 要关闭的statement对象
      * @param connection 要关闭的connection对象
      */
@@ -53,7 +57,7 @@ public class DatabaseConnectionUtil {
     }
 
     /**
-     *
+     * 实现关闭的数据库连接对像，对上面的方法进行来了重载
      * @param resultSet 要关闭的resultSet对象
      * @param statement 要关闭的statement对象
      * @param connection 要关闭的statement对象
@@ -80,9 +84,9 @@ public class DatabaseConnectionUtil {
         }
     }
     /**
-     *
+     * 打印空指针异常
      */
-    private static void printNullPrintException (){
+    public static void printNullPrintException (){
         NullPointerException nullPointerException = new NullPointerException();
         nullPointerException.printStackTrace();
     }

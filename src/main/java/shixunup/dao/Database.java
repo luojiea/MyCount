@@ -10,7 +10,7 @@ public class Database {
         return driverName;
     }
 
-    public void setDriverName(String driverName) {
+    protected void setDriverName(String driverName) {
         this.driverName = driverName;
     }
 
