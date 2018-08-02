@@ -7,16 +7,7 @@ import javax.swing.table.DefaultTableModel;
 
 public class GetTableModel {
     public static DefaultTableModel getTableModel(List<Account> list){
-        DefaultTableModel tableModel = new DefaultTableModel(){
-            @Override
-            public boolean isCellEditable(int row, int column){
-                if(column == 1 || column == 2){
-                    return true;
-                } else {
-                    return  false;
-                }
-            }
-        };
+        DefaultTableModel tableModel = new DefaultTableModel();
         tableModel.addColumn("id");
         tableModel.addColumn("账户名");
         tableModel.addColumn("密码");
